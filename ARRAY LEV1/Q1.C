@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int arr[] = {12, 84, 20, 36, 64, 56, 72, 10, 45, 90};
+    int length = sizeof(arr) / sizeof(arr[0]);
+    int sum = 0;
+
+    for (int i = 0; i < length; i++) {
+        sum += arr[i];
+    }
+
+    double average = (double)sum / length;
+
+    printf("Sum: %d\n", sum);
+    printf("Average: %.2f\n", average);
+
+    return 0;
+}
